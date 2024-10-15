@@ -1,16 +1,2 @@
-#wrap {
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #eee;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-}
-#gnb {
-  ul {
-    display: flex;
-    gap: 20px;
-  }
-}
+@import 'component/include';
+@import 'pattern/p_include'
