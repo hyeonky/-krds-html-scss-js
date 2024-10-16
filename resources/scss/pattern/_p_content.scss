@@ -5,7 +5,7 @@
 }
 
 :root {
-  --swiper-theme-color: red;
+  --swiper-theme-color: #eee;
 }
 
 // 전역 스타일
@@ -61,22 +61,24 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 50%);
       width: 70%;
       max-width: 400px;
       // .text-area__tit
       &__tit {
         font-size: 3rem;
+        color: #fff;
       }
       &__cont {
-        color: #999;
+        color: #eee;
       }
       &__goto {
         display: inline-block;
         margin-top: 20px;
         padding: 7px 20px;
-        background: $primary;
+        background: $black;
         color: $white;
+        border-radius: 3px;
       }
     }
     img {
@@ -101,7 +103,18 @@
     height: 90vh;
   }
   .slide-intro .swiper-slide .text-area {
-    text-align: left;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .slide-intro .swiper-slide .text-area__tit {
+    font-size: 6rem;
+  }
+  .slide-intro .swiper-slide .text-area__cont {
+    font-size: 3rem;
+  }
+  .slide-intro .swiper-slide .text-area__goto{
+    margin-top: 30px;
   }
   .slide-intro .swiper-pagination {
     display: block;

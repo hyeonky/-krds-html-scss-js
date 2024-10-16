@@ -3485,13 +3485,20 @@ input[type=checkbox] {
   border-width: 2px;
 }
 
+.inner {
+  width: 100%;
+  max-width: 1340px;
+  padding: 0 30PX;
+  margin: 0 auto;
+}
+
 #skip-nav,
 #header {
   display: none;
 }
 
 :root {
-  --swiper-theme-color: red;
+  --swiper-theme-color: #eee;
 }
 
 .swiper {
@@ -3548,22 +3555,24 @@ input[type=checkbox] {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   width: 70%;
   max-width: 400px;
 }
 .slide-intro .swiper-slide .text-area__tit {
   font-size: 3rem;
+  color: #fff;
 }
 .slide-intro .swiper-slide .text-area__cont {
-  color: #999;
+  color: #eee;
 }
 .slide-intro .swiper-slide .text-area__goto {
   display: inline-block;
   margin-top: 20px;
   padding: 7px 20px;
-  background: #246beb;
+  background: #000;
   color: #fff;
+  border-radius: 3px;
 }
 .slide-intro .swiper-slide img {
   height: 50vh;
@@ -3582,7 +3591,18 @@ input[type=checkbox] {
     height: 90vh;
   }
   .slide-intro .swiper-slide .text-area {
-    text-align: left;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .slide-intro .swiper-slide .text-area__tit {
+    font-size: 6rem;
+  }
+  .slide-intro .swiper-slide .text-area__cont {
+    font-size: 3rem;
+  }
+  .slide-intro .swiper-slide .text-area__goto {
+    margin-top: 30px;
   }
   .slide-intro .swiper-pagination {
     display: block;
