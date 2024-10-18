@@ -14,6 +14,10 @@ $("#gnb").mouseenter(function() {
   $("#header").addClass("active");
 });
 
+$("#gnb").mouseleave(function () {
+  $("#header").removeClass("active");
+});
+
 $(".lang__btn").click(function() {
   $(".lang__lst").show();
 });

@@ -3561,20 +3561,21 @@ input[type=checkbox] {
   z-index: 1000;
 }
 #header.active::before {
-  display: block;
+  height: 218px;
 }
 #header.active .gnb__depth2 {
-  display: block;
+  height: 218px;
+  padding: 30px 0;
 }
 #header::before {
   content: "";
-  display: none;
   position: absolute;
   top: 102px;
   left: 0;
   right: 0;
-  height: 218px;
+  height: 0;
   background: #f8f8f8;
+  transition: all 0.3s;
 }
 #header .inner {
   display: flex;
@@ -3671,13 +3672,15 @@ input[type=checkbox] {
   transition: all 0.3s;
 }
 #gnb .gnb__depth2 {
-  display: none;
+  overflow: hidden;
   position: absolute;
   top: 102px;
   left: 0;
   right: 0;
-  padding: 30px 0;
+  height: 0;
+  padding: 0 0;
   background: #f8f8f8;
+  transition: all 0.3s;
 }
 #gnb .gnb__depth2::after {
   content: "";
